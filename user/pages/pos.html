@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BinaTrack | Dashboard v2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="AdminLTE | Dashboard v2" />
+    <meta name="author" content="ColorlibHQ" />
+    <meta name="description"
+        content="AdminLTE is a Free Bootstrap 5 Admin Dashboard, 30 example pages using Vanilla JS." />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <meta name="keywords"
+        content="bootstrap 5, bootstrap, bootstrap 5 admin dashboard, bootstrap 5 dashboard, bootstrap 5 charts, bootstrap 5 calendar, bootstrap 5 datepicker, bootstrap 5 tables, bootstrap 5 datatable, vanilla js datatable, colorlibhq, colorlibhq dashboard, colorlibhq admin dashboard" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/source-sans-3@5.0.12/index.css"
+        integrity="sha256-tXJfXfp6Ewt1ilPzLDtQnJV4hclT9XuaZUKyUvmyr+Q=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/styles/overlayscrollbars.min.css"
+        integrity="sha256-tZHrRjVqNSRyWg2wbppGnT833E/Ys0DHWGwT04GiqQg=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        integrity="sha256-9kPW/n5nn53j4WMRYAxe9c1rCY96Oogo/MKSVdKzPmI=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../..../../../user/css/adminlte.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1../../../user/apexcharts.css"
+        integrity="sha256-4MX+61mt9NVvvuPjUWdUdyfZfxSB1/Rf9WtqRHgG5S0=" crossorigin="anonymous" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        /* Base dark/light themes for the entire app */
+        body.light-theme {
+            --sidebar-bg: #f8f9fa;
+            --sidebar-color: #212529;
+            --sidebar-active-bg: #e9ecef;
+        }
+
+        body.dark-theme {
+            --sidebar-bg: #212529;
+            --sidebar-color: #f8f9fa;
+            --sidebar-active-bg: #343a40;
+        }
+
+        /* Sidebar base styles using variables */
+        .sidebar {
+            background-color: var(--sidebar-bg) !important;
+            color: var(--sidebar-color);
+            min-height: 100vh;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .sidebar .nav-link {
+            color: var(--sidebar-color);
+        }
+
+        .sidebar .nav-link.active,
+        .sidebar .nav-link:hover {
+            background-color: var(--sidebar-active-bg);
+        }
+    </style>
+</head>
+
+<body class="layout-fixed sidebar-expand-lg bg-body-tertiary">
+    <!--begin::App Wrapper-->
+    <div class="app-wrapper">
+        <!--begin::Sidebar-->
+        <aside class="app-sidebar shadow sidebar" id="sidebar">
+            <div class="sidebar-brand text-center py-3">
+                <a href="./homepage/index.html" class="brand-link d-flex align-items-center justify-content-center">
+
+                    <span class="brand-text fw-bold">BinaTrack</span>
+                </a>
+            </div>
+
+            <div class="sidebar-wrapper">
+                <nav class="mt-3">
+                  <ul class="nav flex-column sidebar-menu">
+                    <li class="nav-item">
+                      <a href="./index2.html" class="nav-link active">
+                        <i class="nav-icon bi bi-speedometer2"></i>
+                        <p>Dashboard</p>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="./pos.html" class="nav-link">
+                        <i class="nav-icon bi bi-shop"></i>
+                        <p>POS</p>
+                      </a>
+                    </li>
+                    
+        
+                    <!-- Orders -->
+                    <li class="nav-item">
+                      <a href="./orders.html" class="nav-link">
+                        <i class="nav-icon bi bi-bag-check"></i>
+                        <p>Orders</p>
+                      </a>
+                    </li>
+        
+                    <!-- Inventory -->
+                    <li class="nav-item">
+                      <a href="./inventory.html" class="nav-link">
+                        <i class="nav-icon bi bi-boxes"></i>
+                        <p>Inventory</p>
+                      </a>
+                    </li>
+        
+                    <!-- Products -->
+                    <li class="nav-item">
+                      <a href="./products.html" class="nav-link">
+                        <i class="nav-icon bi bi-box-seam"></i>
+                        <p>Products</p>
+                      </a>
+                    </li>
+        
+                    <!-- Customers -->
+                    <li class="nav-item">
+                      <a href="./customers.html" class="nav-link">
+                        <i class="nav-icon bi bi-people"></i>
+                        <p>Customers</p>
+                      </a>
+                    </li>
+        
+                    <!-- Categories -->
+                    <li class="nav-item">
+                      <a href="./categories.html" class="nav-link">
+                        <i class="nav-icon bi bi-tags"></i>
+                        <p>Categories</p>
+                      </a>
+                    </li>
+        
+                    <!-- Settings -->
+                    <li class="nav-item">
+                      <a href="./settings.html" class="nav-link">
+                        <i class="nav-icon bi bi-gear"></i>
+                        <p>Settings</p>
+                      </a>
+                    </li>
+        
+                    <!-- Lockscreen -->
+                    <li class="nav-item">
+                      <a href="./examples/lockscreen.html" class="nav-link">
+                        <i class="nav-icon bi bi-lock"></i>
+                        <p>Lockscreen</p>
+                      </a>
+                    </li>
+        
+                    
+                    <li class="nav-item dropdown d-flex align-items-center gap-2 px-3">
+                      <span class="fw-medium small">Mode:</span>
+                      <div>
+                        <button
+                          class="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center"
+                          id="bd-theme"
+                          type="button"
+                          aria-expanded="false"
+                          aria-label="Toggle theme"
+                          data-bs-toggle="dropdown"
+                          data-bs-display="static"
+                        >
+                          <span class="theme-icon-active">
+                            <i class="bi bi-circle-half my-1"></i>
+                          </span>
+                        </button>
+                        <ul
+                          class="dropdown-menu"
+                          aria-labelledby="bd-theme"
+                          style="--bs-dropdown-min-width: 8rem;"
+                        >
+                          <li>
+                            <button
+                              type="button"
+                              class="dropdown-item d-flex align-items-center active"
+                              data-bs-theme-value="light"
+                              aria-pressed="false"
+                            >
+                              <i class="bi bi-sun-fill me-2"></i>
+                              Light
+                              <i class="bi bi-check-lg ms-auto d-none"></i>
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              type="button"
+                              class="dropdown-item d-flex align-items-center"
+                              data-bs-theme-value="dark"
+                              aria-pressed="false"
+                            >
+                              <i class="bi bi-moon-fill me-2"></i>
+                              Dark
+                              <i class="bi bi-check-lg ms-auto d-none"></i>
+                            </button>
+                          </li>
+                          <li>
+                            <button
+                              type="button"
+                              class="dropdown-item d-flex align-items-center"
+                              data-bs-theme-value="auto"
+                              aria-pressed="true"
+                            >
+                              <i class="bi bi-circle-fill-half-stroke me-2"></i>
+                              Auto
+                              <i class="bi bi-check-lg ms-auto d-none"></i>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    
+                    
+                    <span class="d-none" id="bd-theme-text">Toggle theme</span>
+        
+                  </ul>
+                </nav>
+              </div>
+        </aside>
+
+        <!--end::Sidebar-->
+        <!--end::Sidebar-->
+        <!--begin::App Main-->
+        <main class="app-main">
+
+            <div class="app-content-header py-3 border-bottom">
+                <div class="container-fluid">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center">
+
+                        <!-- Left: Page Title and Breadcrumb -->
+                        <div class="d-flex flex-column">
+                            <h2 class="fw-bold mb-1 text-primary">Welcome Back 👋</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb small mb-0">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                                </ol>
+                            </nav>
+                        </div>
+
+                        <!-- Right: Optional Tools (Date, Avatar, Icons) -->
+                        <div class="d-flex align-items-center gap-3">
+                            <!-- Date (optional) -->
+                            <div class="text-muted small d-none d-md-block">
+                                <i class="bi bi-calendar-event me-1"></i>
+                                <span id="currentDate"></span>
+                            </div>
+
+                            <!-- Notification Icon -->
+                            <a href="#" class="text-muted position-relative">
+                                <i class="bi bi-bell fs-5"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                            </a>
+
+                            <!-- User Avatar -->
+                            <div class="dropdown">
+                                <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle"
+                                    data-bs-toggle="dropdown">
+                                    <img src="https://ui-avatars.com/api/?name=User+Name&background=0D8ABC&color=fff"
+                                        alt="user" class="rounded-circle" width="35" height="35" />
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main Content Area -->
+            <div class="main-content p-4">
+                <!-- POS Header -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <div>
+                    <h2 class="fw-bold text-body mb-1">POS</h2>
+                    <small class="text-muted">Create orders and manage your sales</small>
+                  </div>
+                  <input type="text" class="form-control w-25" placeholder="Search products...">
+                </div>
+              
+                <!-- Add Product -->
+                <div class="bg-body-secondary p-3 rounded mb-4 border">
+                  <h6 class="mb-3">Add New Product</h6>
+                  <form id="addProductForm" class="row g-2">
+                    <div class="col-sm-5">
+                      <input type="text" id="productName" class="form-control form-control-sm" placeholder="Product name" required>
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="number" id="productPrice" class="form-control form-control-sm" placeholder="Price (₦)" required>
+                    </div>
+                    <div class="col-sm-3">
+                      <button type="submit" class="btn btn-primary btn-sm w-100">Add</button>
+                    </div>
+                  </form>
+                </div>
+              
+                <!-- Product List & Cart -->
+                <div class="container-fluid mt-4">
+                  <div class="row g-4">
+                    
+                    <!-- Products -->
+                    <div class="col-lg-8">
+                      <div class="bg-body rounded p-4 shadow-sm border">
+                        <h5 class="mb-4 text-body">Available Products</h5>
+                        <div class="row g-3" id="product-list">
+                          <!-- Dynamically injected via JS -->
+                        </div>
+                      </div>
+                    </div>
+              
+                    <!-- Cart -->
+                    <div class="col-lg-4">
+                      <div class="bg-body rounded p-4 shadow-sm border">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                          <h5 class="mb-0 text-body">Cart</h5>
+                          <button class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#customerModal">
+                            Select Customer
+                          </button>
+                        </div>
+                        <div id="cart-content" class="text-body">
+                          <!-- Dynamically populated cart items -->
+                        </div>
+                      </div>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+                 
+        </main>
+        <!-- Customer Modal -->
+<div class="modal fade" id="customerModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Select Customer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <!-- You can make this dynamic later -->
+        <p>Customer selection functionality can go here.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+        <footer class="app-footer">
+            <!--begin::To the end-->
+            <div class="float-end d-none d-sm-inline">Anything you want</div>
+            <!--end::To the end-->
+            <!--begin::Copyright-->
+            <strong>
+                Copyright &copy; 2014-2025&nbsp;
+                <a href="https://adminlte.io" class="text-decoration-none">BinaTrack</a>.
+            </strong>
+            All rights reserved.
+            <!--end::Copyright-->
+        </footer>
+        <!--end::Footer-->
+    </div>
+
+    <script>
+      // --------------- DATA ---------------
+      let products = [
+        { id: 1, name: "Apple", price: 200 },
+        { id: 2, name: "Banana", price: 100 },
+        { id: 3, name: "Orange", price: 150 },
+        { id: 4, name: "Bread", price: 500 },
+        { id: 5, name: "Milk", price: 300 },
+        { id: 6, name: "Eggs", price: 250 },
+        { id: 7, name: "Yoghurt", price: 400 },
+        { id: 8, name: "Juice", price: 350 },
+        { id: 9, name: "Butter", price: 450 },
+        { id: 10, name: "Sugar", price: 200 },
+        // Add more as needed!
+      ];
+      let cart = [];
+      let showAllProducts = false;
+    
+      // --------------- RENDER PRODUCTS ---------------
+      const productList = document.getElementById("product-list");
+    
+      function renderProducts() {
+        let filtered = products;
+        const searchInput = document.querySelector("input[placeholder='Search products...']").value.toLowerCase();
+        if (searchInput) {
+          filtered = products.filter(p => p.name.toLowerCase().includes(searchInput));
+        }
+        const limit = 6;
+        const toShow = showAllProducts ? filtered : filtered.slice(0, limit);
+    
+        productList.innerHTML = toShow.map(p => `
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h6 class="card-title">${p.name}</h6>
+                <p class="card-text mb-2">₦${p.price.toLocaleString()}</p>
+                <button class="btn btn-sm btn-primary w-100" onclick="addToCart(${p.id})">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        `).join("");
+    
+        // Add "View More" toggle if needed
+        if (filtered.length > limit) {
+          productList.innerHTML += `
+            <div class="col-12 text-center">
+              <button class="btn btn-outline-secondary btn-sm" onclick="toggleViewMore()">
+                ${showAllProducts ? "View Less" : "View More"}
+              </button>
+            </div>
+          `;
+        }
+      }
+    
+      function toggleViewMore() {
+        showAllProducts = !showAllProducts;
+        renderProducts();
+      }
+    
+      // --------------- SEARCH PRODUCTS ---------------
+      document.querySelector("input[placeholder='Search products...']").addEventListener("input", renderProducts);
+    
+      // --------------- ADD NEW PRODUCT ---------------
+      document.getElementById("addProductForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+        const name = document.getElementById("productName").value.trim();
+        const price = parseFloat(document.getElementById("productPrice").value);
+        if (name && price > 0) {
+          const newProduct = {
+            id: products.length ? products[products.length - 1].id + 1 : 1,
+            name,
+            price
+          };
+          products.push(newProduct);
+          this.reset();
+          renderProducts();
+        }
+      });
+    
+      // --------------- CART ---------------
+      const cartContent = document.getElementById("cart-content");
+    
+      function addToCart(id) {
+        const product = products.find(p => p.id === id);
+        const existing = cart.find(item => item.id === id);
+        if (existing) {
+          existing.qty += 1;
+        } else {
+          cart.push({ ...product, qty: 1 });
+        }
+        renderCart();
+      }
+    
+      function removeFromCart(id) {
+        cart = cart.filter(item => item.id !== id);
+        renderCart();
+      }
+    
+      function renderCart() {
+        if (cart.length === 0) {
+          cartContent.innerHTML = "<p class='text-muted'>Your cart is empty.</p>";
+          return;
+        }
+    
+        cartContent.innerHTML = cart.map(item => `
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div>
+              <strong>${item.name}</strong> x${item.qty} - ₦${(item.price * item.qty).toLocaleString()}
+            </div>
+            <button class="btn btn-sm btn-outline-danger" onclick="removeFromCart(${item.id})">Remove</button>
+          </div>
+        `).join("");
+    
+        const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+        cartContent.innerHTML += `<hr><div class="text-end fw-bold">Total: ₦${total.toLocaleString()}</div>`;
+      }
+    
+      // --------------- INIT ---------------
+      renderProducts();
+      renderCart();
+    </script>
+    
+    <!--end::App Wrapper-->
+    <!--begin::Script-->
+    <!--begin::Third Party Plugin(OverlayScrollbars)-->
+    <script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.10.1/browser/overlayscrollbars.browser.es6.min.js"
+        integrity="sha256-dghWARbRe2eLlIJ56wNB+b760ywulqK3DzZYEpsg2fQ=" crossorigin="anonymous"></script>
+    <!--end::Third Party Plugin(OverlayScrollbars)--><!--begin::Required Plugin(popperjs for Bootstrap 5)-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8../../../user/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!--end::Required Plugin(popperjs for Bootstrap 5)--><!--begin::Required Plugin(Bootstrap 5)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3../../../user/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <!--end::Required Plugin(Bootstrap 5)--><!--begin::Required Plugin(AdminLTE)-->
+    <script src="../..../../../user/js/adminlte.js"></script>
+    <!--end::Required Plugin(AdminLTE)--><!--begin::OverlayScrollbars Configure-->
+    <script>
+        const products = [
+          { id: 1, name: 'Coca Cola', price: 1500 },
+          { id: 2, name: 'Fanta', price: 1400 },
+          { id: 3, name: 'Sprite', price: 1600 },
+          { id: 4, name: 'Pepsi', price: 1300 },
+        ];
+      
+        const cart = [];
+      
+        function renderProducts() {
+          const container = document.getElementById('product-list');
+          container.innerHTML = '';
+      
+          products.forEach(product => {
+            const col = document.createElement('div');
+            col.className = 'col-sm-6 col-md-4';
+      
+            col.innerHTML = `
+              <div class="card h-100 bg-secondary text-light border-0 shadow-sm">
+                <div class="card-body d-flex flex-column">
+                  <h6 class="card-title mb-2">${product.name}</h6>
+                  <p class="mb-3 fw-semibold">₦${product.price.toLocaleString()}</p>
+                  <button class="btn btn-light mt-auto" onclick="addToCart(${product.id})">Add to Cart</button>
+                </div>
+              </div>
+            `;
+      
+            container.appendChild(col);
+          });
+        }
+      
+        function addToCart(productId) {
+          const product = products.find(p => p.id === productId);
+          const existing = cart.find(p => p.id === productId);
+      
+          if (existing) {
+            existing.qty += 1;
+          } else {
+            cart.push({ ...product, qty: 1 });
+          }
+      
+          renderCart();
+        }
+      
+        function removeFromCart(productId) {
+          const index = cart.findIndex(p => p.id === productId);
+          if (index !== -1) {
+            cart.splice(index, 1);
+          }
+          renderCart();
+        }
+      
+        function renderCart() {
+          const cartDiv = document.getElementById('cart-content');
+      
+          if (cart.length === 0) {
+            cartDiv.innerHTML = `
+              <div class="text-center py-5 text-secondary">
+                <i class="bi bi-cart" style="font-size: 3rem;"></i>
+                <p class="mt-2">Your cart is empty</p>
+              </div>
+            `;
+            return;
+          }
+      
+          let html = '<ul class="list-group list-group-flush">';
+          let total = 0;
+      
+          cart.forEach(item => {
+            total += item.price * item.qty;
+            html += `
+              <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center">
+                <div>
+                  <strong>${item.name}</strong> <br>
+                  <small class="text-muted">₦${item.price.toLocaleString()} x ${item.qty}</small>
+                </div>
+                <div class="text-end">
+                  <div>₦${(item.price * item.qty).toLocaleString()}</div>
+                  <button class="btn btn-sm btn-outline-danger mt-1" onclick="removeFromCart(${item.id})">
+                    Remove
+                  </button>
+                </div>
+              </li>
+            `;
+          });
+      
+          html += `</ul><div class="mt-3 text-end fw-bold fs-6">Total: ₦${total.toLocaleString()}</div>`;
+          cartDiv.innerHTML = html;
+        }
+      
+        renderProducts();
+      </script>
+      
+    <script>
+        const SELECTOR_SIDEBAR_WRAPPER = '.sidebar-wrapper';
+        const Default = {
+            scrollbarTheme: 'os-theme-light',
+            scrollbarAutoHide: 'leave',
+            scrollbarClickScroll: true,
+        };
+        document.addEventListener('DOMContentLoaded', function () {
+            const sidebarWrapper = document.querySelector(SELECTOR_SIDEBAR_WRAPPER);
+            if (sidebarWrapper && typeof OverlayScrollbarsGlobal?.OverlayScrollbars !== 'undefined') {
+                OverlayScrollbarsGlobal.OverlayScrollbars(sidebarWrapper, {
+                    scrollbars: {
+                        theme: Default.scrollbarTheme,
+                        autoHide: Default.scrollbarAutoHide,
+                        clickScroll: Default.scrollbarClickScroll,
+                    },
+                });
+            }
+        });
+    </script>
+    <!--end::OverlayScrollbars Configure-->
+    <!-- OPTIONAL SCRIPTS -->
+    <!-- apexcharts -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.37.1../../../user/apexcharts.min.js"
+        integrity="sha256-+vh8GkaU7C9/wbSLIcwq82tQ2wTf44aOHA8HlBMwRI8=" crossorigin="anonymous"></script>
+    <script>
+        const dateEl = document.getElementById('currentDate');
+        if (dateEl) {
+            const today = new Date();
+            dateEl.textContent = today.toLocaleDateString(undefined, {
+                weekday: 'short',
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+            });
+        }
+    </script>
+    <script>
+        const dateEl = document.getElementById('currentDate');
+        if (dateEl) {
+            const today = new Date();
+            dateEl.textContent = today.toLocaleDateString(undefined, {
+                weekday: 'short',
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+            });
+        }
+    </script>
+    <script>
+        (() => {
+            "use strict";
+
+            const storedTheme = localStorage.getItem("theme");
+
+            const getPreferredTheme = () => {
+                if (storedTheme) {
+                    return storedTheme;
+                }
+                return window.matchMedia("(prefers-color-scheme: dark)").matches
+                    ? "dark"
+                    : "light";
+            };
+
+            const setTheme = function (theme) {
+                if (
+                    theme === "auto" &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches
+                ) {
+                    document.documentElement.setAttribute("data-bs-theme", "dark");
+                } else {
+                    document.documentElement.setAttribute("data-bs-theme", theme);
+                }
+            };
+
+            setTheme(getPreferredTheme());
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeSwitcher = document.querySelector("#bd-theme");
+                const themeSwitcherText = document.querySelector("#bd-theme-text");
+                const activeThemeIcon = document.querySelector(".theme-icon-active i");
+                const btnToActive = document.querySelector(
+                    `[data-bs-theme-value="${theme}"]`
+                );
+                const svgOfActiveBtn = btnToActive.querySelector("i").getAttribute("class");
+
+                for (const element of document.querySelectorAll("[data-bs-theme-value]")) {
+                    element.classList.remove("active");
+                    element.setAttribute("aria-pressed", "false");
+                }
+
+                btnToActive.classList.add("active");
+                btnToActive.setAttribute("aria-pressed", "true");
+                activeThemeIcon.setAttribute("class", svgOfActiveBtn);
+                const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
+                themeSwitcher.setAttribute("aria-label", themeSwitcherLabel);
+
+                if (focus) themeSwitcher.focus();
+            };
+
+            window
+                .matchMedia("(prefers-color-scheme: dark)")
+                .addEventListener("change", () => {
+                    if (storedTheme !== "light" || storedTheme !== "dark") {
+                        setTheme(getPreferredTheme());
+                    }
+                });
+
+            window.addEventListener("DOMContentLoaded", () => {
+                showActiveTheme(getPreferredTheme());
+
+                for (const toggle of document.querySelectorAll("[data-bs-theme-value]")) {
+                    toggle.addEventListener("click", () => {
+                        const theme = toggle.getAttribute("data-bs-theme-value");
+                        localStorage.setItem("theme", theme);
+                        setTheme(theme);
+                        showActiveTheme(theme, true);
+                    });
+                }
+            });
+        })();
+    </script>
+
+<script>
+    // Existing product and cart arrays...
+    let nextProductId = products.length + 1;
+  
+    document.getElementById('addProductForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+  
+      const name = document.getElementById('productName').value.trim();
+      const price = parseFloat(document.getElementById('productPrice').value);
+  
+      if (!name || price <= 0) {
+        alert('Please enter a valid product name and price.');
+        return;
+      }
+  
+      products.push({
+        id: nextProductId++,
+        name,
+        price
+      });
+  
+      // Reset form
+      e.target.reset();
+      renderProducts();
+    });
+  </script>
+  
+    <!--end::Script-->
+</body>
+<!--end::Body-->
+
+</html>
